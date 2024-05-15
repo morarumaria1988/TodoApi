@@ -1,0 +1,18 @@
+﻿@TodoApi_HostAddress = https://localhost:7066
+
+POST {{TodoApi_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"cook food",
+  "isComplete":true
+}
+###
+
+GET {{TodoApi_HostAddress}}/todoitems
+
+###
+
+GET {{TodoApi_HostAddress}}/todoitems/1
+
+###
