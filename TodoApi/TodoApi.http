@@ -26,3 +26,24 @@ Content-Type: application/json
 }
 
 ###
+
+DELETE {{TodoApi_HostAddress}}/todoitems/1
+
+###
+
+GET {{TodoApi_HostAddress}}/todoitems
+
+###
+
+POST {{TodoApi_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name": "clean windows",
+  "isComplete": false
+}
+###
+
+GET {{TodoApi_HostAddress}}/todoitems
+
+###
